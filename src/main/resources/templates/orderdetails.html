@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>OrderDetails</title>
+</head>
+<body>
+<h1>Order Details</h1>
+<div th:object="${order}">
+    <p th:text="'Name: '+${order.getName()}"></p>
+    <p th:text="'Address: '+${order.getAddress()}"></p>
+    <p th:text="'Base: '+${order.getBase()}"></p>
+    <p th:text="'Topping: '+${order.getTopping()}"></p>
+    <p th:text="'Status: '+${order.getStatus()}"></p>
+</div>
+
+</body>
+</html>
